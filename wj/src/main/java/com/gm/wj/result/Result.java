@@ -2,10 +2,6 @@ package com.gm.wj.result;
 
 import lombok.Data;
 
-/**
- * @author Evan
- * @date 2019/4
- */
 @Data
 public class Result {
     private int code;

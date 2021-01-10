@@ -1,9 +1,11 @@
 <template>
   <el-card class="admin-header">
     <a href="/index">
-      <img src="../../assets/img/icon/icon2.png" alt="" width="55px" style="float: left;margin-top: -5px;">
+      <img src="../../assets/img/icon/icon8.png" alt="" width="55px" style="float: left;margin-top: -5px;">
     </a>
-    <span style="font-size: 32px;font-weight: bold;position:absolute;left: 100px">白  卷</span>
+    <span style="font-size: 32px;font-weight: bold;position:absolute;left: 100px">
+      <div>{{$store.state.loginname}}</div>
+    </span>
     <i class="el-icon-switch-button" v-on:click="logout" style="font-size: 40px;float: right"></i>
   </el-card>
 </template>
