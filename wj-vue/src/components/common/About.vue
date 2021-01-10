@@ -1,9 +1,8 @@
 <template>
   <div class="footer">
     <div style="border-top:1px #1F1F1F solid;">
-      <p class="alt" style="color:#999; line-height:0">&copy; 版权所有：Evan-Nightly &nbsp;
-        <span>技术支持：</span>
-        <a href="" target="_blank" style="color:#999;">Evan & MMK</a>
+      <p class="alt" style="color:#999; line-height:0">&copy; 版权所有：qq/ss/xx &nbsp;
+        <span>软件工程实践</span>
       </p>
     </div>
   </div>
