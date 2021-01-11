@@ -5,19 +5,13 @@
       <a href="#header-div">
         <el-menu-item index="1">
           <i class="el-icon-menu"></i>
-          <span slot="title">技术采用</span>
+          <span slot="title">最新消息</span>
         </el-menu-item>
       </a>
       <a href="#update-card">
         <el-menu-item index="2">
           <i class="el-icon-menu"></i>
           <span slot="title">最近更新</span>
-        </el-menu-item>
-      </a>
-      <a href="#slogan">
-        <el-menu-item index="3">
-          <i class="el-icon-document"></i>
-          <span slot="title">下载源码</span>
         </el-menu-item>
       </a>
       <a href="#about">

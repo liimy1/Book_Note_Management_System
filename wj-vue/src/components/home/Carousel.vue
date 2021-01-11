@@ -54,14 +54,14 @@
       return {
         items: [{
           id: 1,
-          title: 'How2J.cn - Java 全栈学习网站',
-          img: '../../../static/img/carousel/how2j.png',
-          link: 'http://how2j.cn?p=50613'},
+          title: '笔记本功能全面上线',
+          img: '../../../static/img/carousel/pen.png',
+          link: 'http://localhost:8080/jotter'},
         {
           id: 2,
-          title: 'Vue.js - 渐进式 JavaScript 框架',
-          img: '../../../static/img/carousel/vue.png',
-          link: 'https://cn.vuejs.org/'
+          title: '图书上新',
+          img: '../../../static/img/carousel/cunshang.png',
+          link: 'http://localhost:8080/library'
         },
         {
           id: 3,

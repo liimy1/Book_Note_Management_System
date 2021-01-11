@@ -55,7 +55,7 @@ public class LibraryController {
 
     @PostMapping("/api/admin/content/books/covers")
     public String coversUpload(MultipartFile file) {
-        String folder = "F:/img";
+        String folder = "E:/img";
         File imageFolder = new File(folder);
         File f = new File(imageFolder, StringUtils.getRandomString(6) + file.getOriginalFilename()
                 .substring(file.getOriginalFilename().length() - 4));

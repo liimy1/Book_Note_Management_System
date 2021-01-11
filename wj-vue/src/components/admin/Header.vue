@@ -3,7 +3,7 @@
     <a href="/index">
       <img src="../../assets/img/icon/icon8.png" alt="" width="45px" style="float: left;margin-top: -5px;">
     </a>
-    <span style="font-size: 28px;font-weight: bold;position:absolute;left: 90px">
+    <span style="font-size: 28px;font-weight: bold;position:absolute;left: 85px">
       <div>{{user}}</div>
     </span>
     <i class="el-icon-switch-button" v-on:click="logout" style="font-size: 40px;float: right"></i>
