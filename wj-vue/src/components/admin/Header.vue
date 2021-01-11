@@ -1,10 +1,10 @@
 <template>
   <el-card class="admin-header">
     <a href="/index">
-      <img src="../../assets/img/icon/icon8.png" alt="" width="55px" style="float: left;margin-top: -5px;">
+      <img src="../../assets/img/icon/icon8.png" alt="" width="45px" style="float: left;margin-top: -5px;">
     </a>
-    <span style="font-size: 32px;font-weight: bold;position:absolute;left: 100px">
-      <div>{{$store.state.loginname}}</div>
+    <span style="font-size: 28px;font-weight: bold;position:absolute;left: 90px">
+      <div>{{user}}</div>
     </span>
     <i class="el-icon-switch-button" v-on:click="logout" style="font-size: 40px;float: right"></i>
   </el-card>
@@ -15,7 +15,21 @@
 
   export default {
     name: 'Header',
+    data(){
+      return{
+        user:''
+      }
+    },
+    created() {
+      this.getUser()
+
+    },
     methods: {
+      getUser(){
+        var uname=window.localStorage.getItem('username')
+        uname=uname.substring(1,uname.length-1) // 去掉双引号
+        this.user = "您好,"+uname
+      },
       logout () {
         var _this = this
         this.$axios.get('/logout').then(resp => {
