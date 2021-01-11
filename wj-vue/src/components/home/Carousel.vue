@@ -13,6 +13,7 @@
 
 <style>
   .el-carousel__item h3 {
+    margin-left: 3px;
     color: black;
     font-size: 15px;
     /*line-height: 300px;*/
@@ -65,9 +66,9 @@
         },
         {
           id: 3,
-          title: 'element-ui - 网站快速成型工具',
-          img: '../../../static/img/carousel/element.png',
-          link: 'http://element-cn.eleme.io/#/zh-CN'
+          title: '广告',
+          img: '../../../static/img/carousel/kindle.png',
+          link: 'https://www.amazon.com/Kindle-Now-with-Built-in-Front-Light/dp/B07978J597'
         }]
       }
     }
