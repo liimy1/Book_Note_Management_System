@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Global exception handler.
- *
- * @author Evan
- * @date 2019/11
  */
 @ControllerAdvice
 @ResponseBody

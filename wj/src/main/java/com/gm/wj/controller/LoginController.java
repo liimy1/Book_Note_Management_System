@@ -17,9 +17,6 @@ import javax.validation.Valid;
 
 /**
  * Login and register controller.
- *
- * @author Evan
- * @date 2019/4
  */
 @RestController
 public class LoginController {

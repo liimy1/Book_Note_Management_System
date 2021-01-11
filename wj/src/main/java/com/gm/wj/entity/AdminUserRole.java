@@ -8,9 +8,6 @@ import javax.persistence.*;
 
 /**
  * Relations between users and role.
- *
- * @author Evan
- * @date 2019/11
  */
 @Data
 @Entity

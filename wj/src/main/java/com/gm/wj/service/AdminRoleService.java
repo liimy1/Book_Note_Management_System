@@ -12,10 +12,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * @author Evan
- * @date 2019/11
- */
 @Service
 public class AdminRoleService {
     @Autowired
@@ -70,6 +66,7 @@ public class AdminRoleService {
 
     public void editRole(@RequestBody AdminRole role) {
         adminRoleDAO.save(role);
+
         adminRolePermissionService.savePermChanges(role.getId(), role.getPerms());
     }
 }

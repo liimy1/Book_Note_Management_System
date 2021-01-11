@@ -15,20 +15,19 @@
 
   export default {
     name: 'Header',
-    data(){
-      return{
-        user:''
+    data () {
+      return {
+        user: ''
       }
     },
-    created() {
+    created () {
       this.getUser()
-
     },
     methods: {
-      getUser(){
-        var uname=window.localStorage.getItem('username')
-        uname=uname.substring(1,uname.length-1) // 去掉双引号
-        this.user = "您好,"+uname
+      getUser () {
+        var uname = window.localStorage.getItem('username')
+        uname = uname.substring(1, uname.length - 1) // 去掉双引号
+        this.user = '您好,' + uname
       },
       logout () {
         var _this = this

@@ -7,10 +7,6 @@ import org.springframework.boot.web.server.ErrorPageRegistry;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 
-/**
- * @author Evan
- * @date 2019/4
- */
 @Component
 public class ErrorConfig implements ErrorPageRegistrar {
 

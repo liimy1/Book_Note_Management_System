@@ -10,9 +10,6 @@ import java.util.List;
 
 /**
  * User entity.
- *
- * @author Evan
- * @date 2019/4
  */
 @Data
 //生成无参构造方法

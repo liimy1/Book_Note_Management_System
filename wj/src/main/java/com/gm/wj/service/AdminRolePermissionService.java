@@ -10,10 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author Evan
- * @date 2019/11
- */
 @Service
 public class AdminRolePermissionService {
     @Autowired
@@ -26,6 +22,7 @@ public class AdminRolePermissionService {
 //    @Modifying
     @Transactional
     public void savePermChanges(int rid, List<AdminPermission> perms) {
+        System.out.println("给角色配置权限中...");
         adminRolePermissionDAO.deleteAllByRid(rid);
         List<AdminRolePermission> rps = new ArrayList<>();
         perms.forEach(p -> {
@@ -35,5 +32,6 @@ public class AdminRolePermissionService {
             rps.add(rp);
         });
         adminRolePermissionDAO.saveAll(rps);
+        System.out.println("配置权限完了！");
     }
 }

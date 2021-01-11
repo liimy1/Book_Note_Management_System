@@ -11,9 +11,6 @@ import javax.validation.Valid;
 
 /**
  * User controller.
- *
- * @author Evan
- * @date 2019/11
  */
 
 @RestController

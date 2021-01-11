@@ -90,6 +90,7 @@ public class UserService {
         user.setSalt(salt);
         user.setPassword(encodedPassword);
 
+        //System.out.println("添加用户成功！！");
         userDAO.save(user);
 
         return 1;
@@ -112,6 +113,7 @@ public class UserService {
     }
 
     public void editUser(User user) {
+        System.out.println("编辑用户中...");
         User userInDB = userDAO.findByUsername(user.getUsername());
         userInDB.setName(user.getName());
         userInDB.setPhone(user.getPhone());

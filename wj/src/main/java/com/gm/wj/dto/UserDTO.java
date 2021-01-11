@@ -8,10 +8,6 @@ import lombok.ToString;
 
 import java.util.List;
 
-/**
- * @author Evan
- * @date 2020/4/1 19:57
- */
 @Data
 @ToString
 public class UserDTO implements OutputConverter<UserDTO, User> {
