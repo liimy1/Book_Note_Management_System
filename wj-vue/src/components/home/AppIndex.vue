@@ -4,8 +4,8 @@
       <div class="home">
         <div id="header-div">
           <div style="height: 200px"></div>
-          <carousel></carousel>
-<!--          <quick-nav style="float: right;margin-top: -450px;margin-right: 480px"></quick-nav>-->
+          <carousel ></carousel>
+          <quick-nav style="float: right;margin-top: -450px;margin-right: 480px"></quick-nav>
         </div>
         <update-card id="update-card"></update-card>
         <slogan id="slogan"></slogan>

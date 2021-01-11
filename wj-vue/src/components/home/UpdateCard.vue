@@ -2,20 +2,20 @@
   <el-card class="box-card">
     <div slot="header" class="clearfix">
       <span style="font-weight: bold;font-size: 20px">最近更新</span>
-      <!--<el-button style="float: right; padding: 3px 0" type="text">修改</el-button>-->
+      <el-button v-on:click="modify" style="float: right; padding: 3px 0;color:black" icon="el-icon-search" circle>放大</el-button>
     </div>
     <div class="block">
       <el-timeline>
-        <el-timeline-item timestamp="2019/4/13" placement="top">
+        <el-timeline-item timestamp="2021/1/11" placement="top">
           <el-card>
-            <h4>实现上传至服务器和输入 URL 两种方式添加封面</h4>
-            <p>Evan 提交于 2019/4/13 21:32</p>
+            <h4 style="font-size: FontSize+'px';font-weight: bold">网站升级</h4>
+            <p>ss 提交于 2021/1/11 21:32</p>
           </el-card>
         </el-timeline-item>
         <el-timeline-item timestamp="2019/4/11" placement="top">
           <el-card>
             <h4>实现图书分类功能</h4>
-            <p>Evan 提交于 2019/4/11 09:02</p>
+            <p>qq 提交于 2019/4/11 09:02</p>
           </el-card>
         </el-timeline-item>
         <el-timeline-item timestamp="2019/4/8" placement="top">
@@ -43,7 +43,18 @@
 
 <script>
   export default {
-    name: 'UpdateCard'
+    name: 'UpdateCard',
+    data(){
+      return{
+        FontSize:16
+      }
+    },
+    methods:{
+      modify () {
+        this.FontSize+=20
+        console.log(this.FontSize)
+      }
+    }
   }
 </script>
 
