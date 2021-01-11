@@ -6,7 +6,7 @@
     <span style="font-size: 28px;font-weight: bold;position:absolute;left: 85px">
       <div>{{user}}</div>
     </span>
-    <i class="el-icon-switch-button" v-on:click="logout" style="font-size: 40px;float: right"></i>
+    <el-button type="text" v-on:click="logout" style="font-size: 20px;float:right;color:black">退出</el-button>
   </el-card>
 </template>
 
