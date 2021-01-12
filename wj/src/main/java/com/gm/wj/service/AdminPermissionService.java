@@ -36,7 +36,7 @@ public class AdminPermissionService {
     public boolean needFilter(String requestAPI) {
         List<AdminPermission> ps = adminPermissionDAO.findAll();
         for (AdminPermission p: ps) {
-            // match prefix
+            // 匹配前缀
             if (requestAPI.startsWith(p.getUrl())) {
                 return true;
             }
