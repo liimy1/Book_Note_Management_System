@@ -2,13 +2,13 @@
   <el-card class="box-card">
     <div slot="header" class="clearfix">
       <span style="font-weight: bold;font-size: 20px">最近更新</span>
-      <el-button v-on:click="modify" style="float: right; padding: 3px 0;color:black" icon="el-icon-search" circle>放大</el-button>
+      <el-button v-on:click="document.getElementById('fangda').style.fontSize='50px'" style="float: right; padding: 3px 0;color:black" icon="el-icon-search" circle>放大</el-button>
     </div>
     <div class="block">
       <el-timeline>
         <el-timeline-item timestamp="2021/1/11" placement="top">
           <el-card>
-            <h4 style="font-size: FontSize+'px';font-weight: bold">网站升级</h4>
+            <h4 id="fangda">网站升级</h4>
             <p>ss 提交于 2021/1/11 21:32</p>
           </el-card>
         </el-timeline-item>
@@ -44,14 +44,14 @@
 <script>
   export default {
     name: 'UpdateCard',
-    data(){
-      return{
-        FontSize:16
+    data () {
+      return {
+        FontSize: 16
       }
     },
-    methods:{
+    methods: {
       modify () {
-        this.FontSize+=20
+        this.FontSize += 20
         console.log(this.FontSize)
       }
     }
@@ -64,5 +64,9 @@
     width: 988px;
     height: 1050px;
     text-align: left;
+  }
+  #fangda{
+    font-size: 15px;
+    font-weight: bold;
   }
 </style>
