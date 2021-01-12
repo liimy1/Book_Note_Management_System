@@ -32,11 +32,4 @@
     width: 80px;
     /*position: absolute;*/
   }
-
-  .csdn-link {
-    width: 65px;
-    /*position: absolute;*/
-    margin-bottom: 7px;
-    margin-left: 20px;
-  }
 </style>
