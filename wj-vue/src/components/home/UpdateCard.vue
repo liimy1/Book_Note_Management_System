@@ -2,7 +2,8 @@
   <el-card class="box-card">
     <div slot="header" class="clearfix">
       <span style="font-weight: bold;font-size: 20px">最近更新</span>
-      <el-button @click="modify" style="float: right; padding: 3px 0;color:black" icon="el-icon-search" circle>放大</el-button>
+      <el-button @click="minus" style="float: right; padding: 5px 0;color:black" icon="el-icon-search" circle>缩小</el-button>
+      <el-button @click="add" style="float: right; padding: 5px 0;color:black" icon="el-icon-search" circle>放大</el-button>
     </div>
     <div class="block">
       <el-timeline>
@@ -50,11 +51,17 @@
       }
     },
     methods:{
-      modify () {
-        if(this.FontSize<=50)
+      add () {
+        if(this.FontSize<=20)
           this.FontSize+=3
         else
           this.$alert('字体已放至最大')
+      },
+      minus () {
+        if(this.FontSize>=8)
+          this.FontSize-=3
+        else
+          this.$alert('字体已缩至最小')
       }
     }
   }
