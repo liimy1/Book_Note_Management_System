@@ -1,5 +1,6 @@
 <template>
-  <el-container>
+    <!-- 图书页面的根组件 -->
+    <el-container>
     <el-aside style="width: 200px;margin-top: 20px">
       <switch></switch>
       <SideMenu @indexSelect="listByCategory" ref="sideMenu"></SideMenu>
