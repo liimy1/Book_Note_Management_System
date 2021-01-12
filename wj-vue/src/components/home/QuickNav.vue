@@ -4,6 +4,9 @@
 <!--      <a href="https://github.com/Antabot/White-Jotter/blob/master/README.md" target="_blank">-->
 <!--        <img src="../../assets/img/icon/icon5.png" alt="" class="readme">-->
 <!--      </a>-->
+      <a href="https://github.com/liimy1/Book_Note_Management_System/blob/master/README.md" target="_blank">
+        <img src="../../assets/img/icon/icon5.png" alt="" class="readme">
+      </a>
       <img src="../../assets/img/icon/icon7.png" alt="" class="spark">
 <!--      <img src="../../assets/img/icon/badge.png" alt="" class="logo">-->
     </div>
