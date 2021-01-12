@@ -20,7 +20,7 @@ import java.util.List;
 @Entity
 @Table(name = "user")
 @ToString
-//hu lue shu xing
+//忽略属性
 @JsonIgnoreProperties({"handler","hibernateLazyInitializer"})
 public class User {
 
