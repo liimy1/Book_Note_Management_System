@@ -134,6 +134,7 @@ Vue.prototype.$axios = axios
 Vue.config.productionTip = false
 Vue.use(mavonEditor)
 
+//路由全局守卫
 router.beforeEach((to, from, next) => {
     if (store.state.username && to.path.startsWith('/admin')) {
       initAdminMenu(router, store)
@@ -177,6 +178,7 @@ axios.interceptors.response.use(
     return Promise.reject(error)
   })
 
+//用于执行请求，调用格式化方法并向路由表中添加信息
 const initAdminMenu = (router, store) => {
   // 防止重复触发加载菜单操作
   if (store.state.adminMenus.length > 0) {
@@ -191,13 +193,16 @@ const initAdminMenu = (router, store) => {
   })
 }
 
+//传入的参数 routes代表从后端获取的菜单列表
 const formatRoutes = (routes) => {
   let fmtRoutes = []
+  //遍历这个列表，首先判断一条菜单项是否含子项，如果含则进行递归处理。
   routes.forEach(route => {
     if (route.children) {
       route.children = formatRoutes(route.children)
     }
 
+    // 路由的属性与菜单项的属性对应起来
     let fmtRoute = {
       path: route.path,
       component: resolve => {

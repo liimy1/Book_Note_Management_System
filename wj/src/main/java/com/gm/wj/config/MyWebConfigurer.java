@@ -20,7 +20,7 @@ public class MyWebConfigurer implements WebMvcConfigurer {
     //上传的封面保存到本地
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/api/file/**").addResourceLocations("file:" + "e:/img/");
+        registry.addResourceHandler("/api/file/**").addResourceLocations("file:" + "d:/img/");
     }
 
 }

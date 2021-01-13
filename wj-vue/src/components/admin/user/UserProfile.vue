@@ -155,6 +155,7 @@
             }
           })
         },
+        // 改变状态
         commitStatusChange (value, user) {
           if (user.username !== 'admin') {
             this.$axios.put('/admin/user/status', {
@@ -174,6 +175,7 @@
             this.$alert('不能禁用管理员账户')
           }
         },
+        // 添加用户的角色
         onSubmit (user) {
           let _this = this
           // 根据视图绑定的角色 id 向后端传送角色信息
@@ -182,6 +184,7 @@
             for (let j = 0; j < _this.roles.length; j++) {
               if (_this.selectedRolesIds[i] === _this.roles[j].id) {
                 roles.push(_this.roles[j])
+                // console.log(_this.roles[j])
               }
             }
           }
@@ -202,14 +205,15 @@
             }
           })
         },
+
         editUser (user) {
           this.dialogFormVisible = true
           this.selectedUser = user
           let roleIds = []
           for (let i = 0; i < user.roles.length; i++) {
-            roleIds.push(user.roles[i].id)
+            roleIds.push(user.roles[i].id) //roles是从后端查询到的所有角色信息
           }
-          this.selectedRolesIds = roleIds
+          this.selectedRolesIds = roleIds //selectedRolesIds是与多选框双向绑定
         },
         resetPassword (username) {
           this.$axios.put('/admin/user/password', {
